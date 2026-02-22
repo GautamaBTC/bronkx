@@ -122,20 +122,43 @@ const HeroEnhanced = () => {
           </div>
           
           {/* CTA кнопка с анимацией */}
-          <div className="relative inline-block">
+          <div className="flex flex-col items-center">
             <Link 
               to="booking" 
               spy={true} 
               smooth={true} 
               offset={-70} 
               duration={500} 
-              className="btn-primary cursor-pointer relative overflow-hidden group"
+              className="btn-primary cursor-pointer relative overflow-hidden group text-center px-8 py-3"
             >
               <span className="relative z-10">Записаться бесплатно</span>
               <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></span>
             </Link>
             {/* Декоративный элемент под кнопкой */}
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-1 bg-bronx-orange transition-all duration-500 group-hover:w-full"></div>
+            <div className="w-0 h-1 bg-bronx-orange transition-all duration-500 group-hover:w-48"></div>
+          </div>
+          
+          {/* Контактная информация */}
+          <div className="mt-8 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-bronx-light">
+            <div className="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-bronx-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span>+7 (918) 855-77-99</span>
+            </div>
+            <div className="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-bronx-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>ул. Ленина, 142 (или 142А)</span>
+            </div>
+            <div className="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-bronx-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>09:00 - 21:00</span>
+            </div>
           </div>
           
           {/* Дополнительное УТП под кнопкой */}

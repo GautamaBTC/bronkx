@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'bronx-gray': '#1a1a1a',
-        'bronx-dark': '#0f0f0f',
-        'bronx-orange': '#ff4500',
-        'bronx-light': '#e0e0e0',
+        'bronx-gray': '#1e293b', // Сине-черный графит
+        'bronx-dark': '#0f172a', // Темно-синий
+        'bronx-orange': '#ff6b35', // Ярко-оранжевый
+        'bronx-light': '#e2e8f0', // Светло-серый
       },
       fontFamily: {
         serif: ['Playfair Display', 'serif'],
