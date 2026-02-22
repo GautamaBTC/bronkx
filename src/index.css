@@ -13,7 +13,7 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0f0f0f;
+  background-color: transparent;
   color: #e0e0e0;
 }
 
@@ -169,4 +169,34 @@ code {
   right: 0;
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(230, 126, 34, 0.5), transparent);
+}
+
+/* Анимация появления элементов при скролле */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Плавные переходы между секциями */
+section {
+  transition: all 0.3s ease;
+}
+
+/* Резиновые отступы для секций */
+@media (min-width: 768px) {
+  section {
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 3rem 0;
+  }
 }

@@ -98,88 +98,10 @@ const Header = () => {
             </Link>
           </div>
           
-          {/* Мобильное меню */}
-          <button 
-            className="md:hidden text-white focus:outline-none" 
-            onClick={toggleMenu}
-          >
-            {isMenuOpen ? (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
+          {/* Старое мобильное меню удалено, используется новое анимированное меню */}
         </div>
         
-        {/* Мобильное меню (скрыто по умолчанию) */}
-        <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-bronx-dark mt-4 rounded-lg`}>
-          <div className="container-custom py-4">
-            <nav className="flex flex-col space-y-3">
-              <Link 
-                to="services" 
-                spy={true} 
-                smooth={true} 
-                offset={-70} 
-                duration={500} 
-                className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
-                onClick={closeMenu}
-              >
-                Услуги
-              </Link>
-              <Link 
-                to="team" 
-                spy={true} 
-                smooth={true} 
-                offset={-70} 
-                duration={500} 
-                className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
-                onClick={closeMenu}
-              >
-                Мастера
-              </Link>
-              <Link 
-                to="testimonials" 
-                spy={true} 
-                smooth={true} 
-                offset={-70} 
-                duration={500} 
-                className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
-                onClick={closeMenu}
-              >
-                Отзывы
-              </Link>
-              <Link 
-                to="booking" 
-                spy={true} 
-                smooth={true} 
-                offset={-70} 
-                duration={500} 
-                className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
-                onClick={closeMenu}
-              >
-                Запись
-              </Link>
-              <a href="tel:+79188557799" className="text-bronx-light hover:text-bronx-orange transition duration-300">
-                +7 (918) 855-77-99
-              </a>
-              <Link 
-                to="booking" 
-                spy={true} 
-                smooth={true} 
-                offset={-70} 
-                duration={500} 
-                className="btn-primary text-center cursor-pointer"
-                onClick={closeMenu}
-              >
-                Записаться
-              </Link>
-            </nav>
-          </div>
-        </div>
+        {/* Старое мобильное меню удалено, используется новое анимированное меню */}
       </div>
     </header>
   );

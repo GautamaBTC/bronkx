@@ -12,14 +12,14 @@ const DiagonalBackground = () => {
         <defs>
           {/* Градиент для первого цвета */}
           <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#1a1a1a" />
-            <stop offset="100%" stopColor="#2d2d2d" />
+            <stop offset="0%" stopColor="#0a0a0a" />
+            <stop offset="100%" stopColor="#1a1a1a" />
           </linearGradient>
           
           {/* Градиент для второго цвета */}
           <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#e67e22" />
-            <stop offset="100%" stopColor="#f39c12" />
+            <stop offset="0%" stopColor="#e67e22" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="#f39c12" stopOpacity="0.2" />
           </linearGradient>
           
           {/* Узор для текстуры */}
@@ -32,16 +32,16 @@ const DiagonalBackground = () => {
         <path d="M0,0 L0,800 L1200,0 Z" fill="url(#grad1)" />
         
         {/* Второй треугольник (оранжевый) */}
-        <path d="M0,800 L1200,0 L1200,800 Z" fill="url(#grad2)" opacity="0.9" />
+        <path d="M0,800 L1200,0 L1200,800 Z" fill="url(#grad2)" opacity="0.4" />
         
         {/* Текстурный слой */}
         <rect width="100%" height="100%" fill="url(#pattern)" />
         
         {/* Дополнительные декоративные элементы */}
-        <circle cx="100" cy="100" r="80" fill="rgba(255,255,255,0.02)" />
-        <circle cx="1100" cy="700" r="120" fill="rgba(0,0,0,0.05)" />
-        <circle cx="900" cy="200" r="60" fill="rgba(255,255,255,0.03)" />
-        <circle cx="300" cy="600" r="100" fill="rgba(0,0,0,0.03)" />
+        <circle cx="100" cy="100" r="80" fill="rgba(255,255,255,0.01)" />
+        <circle cx="1100" cy="700" r="120" fill="rgba(0,0,0,0.02)" />
+        <circle cx="900" cy="200" r="60" fill="rgba(255,255,255,0.015)" />
+        <circle cx="300" cy="600" r="100" fill="rgba(0,0,0,0.015)" />
       </svg>
     </div>
   );
