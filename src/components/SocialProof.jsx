@@ -67,7 +67,7 @@ const SocialProof = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
-            BRONX в <span className="text-bronx-orange">цифрах</span>
+            BRONX в <span className="text-black">цифрах</span>
           </h2>
           <div className="w-24 h-1 bg-bronx-orange mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">

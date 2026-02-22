@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import AnimatedBurgerMenu from './AnimatedBurgerMenu';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,52 +22,53 @@ const Header = () => {
 
 
   return (
-    <header className={`fixed w-full bg-bronx-gray bg-opacity-95 backdrop-blur-sm z-50 transition-all duration-300 ${isScrolled ? 'py-2 shadow-lg' : 'py-4'}`}>
+    <>
+      <header className={`fixed w-full bg-bronx-gray bg-opacity-95 backdrop-blur-sm z-50 transition-all duration-300 ${isScrolled ? 'py-1 shadow-lg' : 'py-3'}`}>
       <div className="container-custom">
-        <div className="flex justify-between items-center md:justify-start">
+        <div className="flex justify-between items-center">
           {/* Логотип */}
-          <div className="flex items-center md:mr-auto absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none md:relative md:left-0 md:transform-none">
-            <span className="text-2xl font-serif font-bold text-bronx-orange">BRONX</span>
+          <div className="flex items-center">
+            <span className="text-3xl font-serif font-bold text-bronx-orange">BRONX</span>
           </div>
           
           {/* Навигация для десктопа */}
           <nav className="hidden md:flex space-x-8">
-            <Link 
-              to="services" 
-              spy={true} 
-              smooth={true} 
-              offset={-70} 
-              duration={500} 
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
             >
               Услуги
             </Link>
-            <Link 
-              to="team" 
-              spy={true} 
-              smooth={true} 
-              offset={-70} 
-              duration={500} 
+            <Link
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
             >
               Мастера
             </Link>
-            <Link 
-              to="testimonials" 
-              spy={true} 
-              smooth={true} 
-              offset={-70} 
-              duration={500} 
+            <Link
+              to="testimonials"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
             >
               Отзывы
             </Link>
-            <Link 
-              to="booking" 
-              spy={true} 
-              smooth={true} 
-              offset={-70} 
-              duration={500} 
+            <Link
+              to="booking"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
             >
               Запись
@@ -96,6 +98,8 @@ const Header = () => {
         {/* Старое мобильное меню удалено, используется новое анимированное меню */}
       </div>
     </header>
+      <AnimatedBurgerMenu />
+    </>
   );
 };
 

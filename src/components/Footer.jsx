@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -24,52 +25,68 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Навигация</h3>
             <ul className="space-y-2">
               <li>
-                <Link 
-                  to="services" 
-                  spy={true} 
-                  smooth={true} 
-                  offset={-70} 
-                  duration={500} 
+                <Link
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
                 >
                   Услуги
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="team" 
-                  spy={true} 
-                  smooth={true} 
-                  offset={-70} 
-                  duration={500} 
+                <Link
+                  to="team"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
                 >
                   Мастера
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="testimonials" 
-                  spy={true} 
-                  smooth={true} 
-                  offset={-70} 
-                  duration={500} 
+                <Link
+                  to="testimonials"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
                 >
                   Отзывы
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="booking" 
-                  spy={true} 
-                  smooth={true} 
-                  offset={-70} 
-                  duration={500} 
+                <Link
+                  to="booking"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   className="text-bronx-light hover:text-bronx-orange transition duration-300 cursor-pointer"
                 >
                   Запись
                 </Link>
+              </li>
+              <li>
+                <NavLink
+                  to="/privacy-policy"
+                  className="text-bronx-light hover:text-bronx-orange transition duration-300"
+                >
+                  Политика конфиденциальности
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/terms-of-use"
+                  className="text-bronx-light hover:text-bronx-orange transition duration-300"
+                >
+                  Правила использования
+                </NavLink>
               </li>
             </ul>
           </div>

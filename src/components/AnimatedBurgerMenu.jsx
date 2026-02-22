@@ -42,13 +42,13 @@ const AnimatedBurgerMenu = () => {
     <>
       {/* Анимированное бургер-меню */}
       <button
-        className={`md:hidden fixed top-6 right-6 z-50 w-12 h-12 rounded-full bg-bronx-orange flex flex-col justify-center items-center transition-all duration-300 ${isScrolled ? 'top-4' : ''}`}
+        className={`md:hidden fixed top-3 right-6 z-50 w-12 h-12 rounded-full bg-bronx-orange flex flex-col justify-center items-center transition-all duration-300 ${isScrolled ? 'top-1' : ''}`}
         onClick={toggleMenu}
         aria-label="Меню"
       >
-        <span className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? 'rotate-45' : '-translate-y-1.5'}`}></span>
-        <span className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-        <span className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? '-rotate-45' : 'translate-y-1.5'}`}></span>
+        <span className={`absolute w-6 h-0.5 bg-white transition-all duration-300 z-30 ${isMenuOpen ? 'rotate-45' : '-translate-y-1.5'}`}></span>
+        <span className={`absolute w-6 h-0.5 bg-white transition-all duration-300 z-20 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+        <span className={`absolute w-6 h-0.5 bg-white transition-all duration-300 z-30 ${isMenuOpen ? '-rotate-45' : 'translate-y-1.5'}`}></span>
       </button>
 
       {/* Затемнение фона при открытом меню */}
@@ -71,48 +71,48 @@ const AnimatedBurgerMenu = () => {
 
           {/* Навигация */}
           <nav className="flex flex-col space-y-6 flex-grow">
-            <Link 
-              to="services" 
-              spy={true} 
-              smooth={true} 
-              offset={-70} 
-              duration={500} 
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               className="text-xl text-white hover:text-bronx-orange transition duration-300 cursor-pointer flex items-center"
               onClick={closeMenu}
             >
               <span className="w-2 h-2 bg-bronx-orange rounded-full mr-3"></span>
               Услуги
             </Link>
-            <Link 
-              to="team" 
-              spy={true} 
-              smooth={true} 
-              offset={-70} 
-              duration={500} 
+            <Link
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               className="text-xl text-white hover:text-bronx-orange transition duration-300 cursor-pointer flex items-center"
               onClick={closeMenu}
             >
               <span className="w-2 h-2 bg-bronx-orange rounded-full mr-3"></span>
               Мастера
             </Link>
-            <Link 
-              to="testimonials" 
-              spy={true} 
-              smooth={true} 
-              offset={-70} 
-              duration={500} 
+            <Link
+              to="testimonials"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               className="text-xl text-white hover:text-bronx-orange transition duration-300 cursor-pointer flex items-center"
               onClick={closeMenu}
             >
               <span className="w-2 h-2 bg-bronx-orange rounded-full mr-3"></span>
               Отзывы
             </Link>
-            <Link 
-              to="booking" 
-              spy={true} 
-              smooth={true} 
-              offset={-70} 
-              duration={500} 
+            <Link
+              to="booking"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               className="text-xl text-white hover:text-bronx-orange transition duration-300 cursor-pointer flex items-center"
               onClick={closeMenu}
             >

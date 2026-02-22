@@ -25,8 +25,8 @@ const HeroEnhanced = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Основной заголовок с анимацией печати */}
           <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-white text-shadow">
-            BRONX — <span className="text-bronx-orange">барбершоп в Шахтах</span>
-          </h1>
+  <span className="text-bronx-orange">BRONX</span> — барбершоп в Шахтах
+</h1>
           
           {/* Анимированная подстрока */}
           <div className="text-xl md:text-2xl text-bronx-light mb-10 h-12 text-shadow">

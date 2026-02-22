@@ -61,8 +61,8 @@ const TestimonialsEnhanced = () => {
     <section id="testimonials" className="py-20 bg-white">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
-            Отзывы наших <span className="text-bronx-orange">клиентов</span>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-bronx-orange">
+            Отзывы наших клиентов
           </h2>
           <div className="w-24 h-1 bg-bronx-orange mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
