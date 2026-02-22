@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import AnimatedBurgerMenu from './AnimatedBurgerMenu';
+import ModernAnimatedBurgerMenu from './ModernAnimatedBurgerMenu';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -98,7 +98,7 @@ const Header = () => {
         {/* Старое мобильное меню удалено, используется новое анимированное меню */}
       </div>
     </header>
-      <AnimatedBurgerMenu />
+      <ModernAnimatedBurgerMenu />
     </>
   );
 };
