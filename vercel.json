@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "bronx-barbershop",
   "builds": [
     {
       "src": "package.json",
@@ -15,11 +14,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "buildCommand": "npm run build",
-  "outputDirectory": "build",
-  "installCommand": "npm install",
-  "devCommand": "npm start",
-  "framework": "react",
-  "functions": {}
+  ]
 }
