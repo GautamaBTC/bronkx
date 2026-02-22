@@ -2,6 +2,32 @@ import React from 'react';
 import { Link } from 'react-scroll';
 
 const ServicesEnhanced = () => {
+  // Функция для отображения SVG-иконок
+  const renderIcon = (iconName) => {
+    switch(iconName) {
+      case 'scissors':
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
+          </svg>
+        );
+      case 'beard':
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+        );
+      case 'child':
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+        );
+      default:
+        return null;
+    }
+  };
+
   const services = [
     {
       title: "Мужская стрижка",
@@ -15,7 +41,7 @@ const ServicesEnhanced = () => {
         "Рекомендации по уходу"
       ],
       duration: "45-60 мин",
-      icon: "✂️"
+      icon: "scissors"
     },
     {
       title: "Стрижка и оформление бороды",
@@ -29,7 +55,7 @@ const ServicesEnhanced = () => {
         "Советы по уходу"
       ],
       duration: "60-90 мин",
-      icon: "🧔"
+      icon: "beard"
     },
     {
       title: "Детская стрижка",
@@ -43,7 +69,7 @@ const ServicesEnhanced = () => {
         "Скидка для отцов"
       ],
       duration: "30-45 мин",
-      icon: "👦"
+      icon: "child"
     }
   ];
 
@@ -70,10 +96,12 @@ const ServicesEnhanced = () => {
               {/* Верхняя часть карточки с иконкой и заголовком */}
               <div className="bg-bronx-dark p-6 text-white">
                 <div className="flex justify-between items-start mb-4">
-                  <div className="text-4xl">{service.icon}</div>
+                  <div className="text-bronx-orange">
+                    {renderIcon(service.icon)}
+                  </div>
                   <div className="text-2xl font-bold text-bronx-orange">{service.price}</div>
                 </div>
-                <h3 className="text-xl font-serif font-bold">{service.title}</h3>
+                <h3 className="text-xl font-serif font-bold text-white">{service.title}</h3>
                 <p className="text-bronx-light text-sm mt-2">{service.description}</p>
                 <div className="mt-3 text-xs text-bronx-light flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -91,7 +119,7 @@ const ServicesEnhanced = () => {
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-bronx-orange mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
-                      <span className="text-gray-700">{feature}</span>
+                      <span className="text-gray-900 font-medium">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -115,7 +143,7 @@ const ServicesEnhanced = () => {
         {/* Сравнение с обычной парикмахерской */}
         <div className="bg-bronx-gray bg-opacity-50 rounded-xl p-8">
           <h3 className="text-2xl font-serif font-bold text-center mb-8">
-            Почему <span className="text-brонx-orange">BRONX</span>, а не обычная парикмахерская?
+            Почему <span className="text-bronx-orange">BRONX</span>, а не обычная парикмахерская?
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -131,31 +159,31 @@ const ServicesEnhanced = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
-                  <span className="text-gray-700">Универсальные мастера без специализации</span>
+                  <span className="text-gray-900 font-medium">Универсальные мастера без специализации</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
-                  <span className="text-gray-700">Очереди и ожидание</span>
+                  <span className="text-gray-900 font-medium">Очереди и ожидание</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
-                  <span className="text-gray-700">Стрижка "на глазок" без консультации</span>
+                  <span className="text-gray-900 font-medium">Стрижка "на глазок" без консультации</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
-                  <span className="text-gray-700">Скрытые доплаты за услуги</span>
+                  <span className="text-gray-900 font-medium">Скрытые доплаты за услуги</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
-                  <span className="text-gray-700">Нет гарантии на результат</span>
+                  <span className="text-gray-900 font-medium">Нет гарантии на результат</span>
                 </li>
               </ul>
             </div>
@@ -172,31 +200,31 @@ const ServicesEnhanced = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-gray-700">Мастера специализируются на мужских стрижках</span>
+                  <span className="text-gray-900 font-medium">Мастера специализируются на мужских стрижках</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-gray-700">Онлайн-запись без ожидания</span>
+                  <span className="text-gray-900 font-medium">Онлайн-запись без ожидания</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-gray-700">Детальная консультация перед стрижкой</span>
+                  <span className="text-gray-900 font-medium">Детальная консультация перед стрижкой</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-gray-700">Фиксированные цены без скрытых доплат</span>
+                  <span className="text-gray-900 font-medium">Фиксированные цены без скрытых доплат</span>
                 </li>
                 <li className="flex items-start">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-gray-700">Гарантия на стрижку - исправим бесплатно</span>
+                  <span className="text-gray-900 font-medium">Гарантия на стрижку - исправим бесплатно</span>
                 </li>
               </ul>
             </div>

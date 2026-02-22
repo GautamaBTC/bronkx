@@ -69,7 +69,7 @@ const TeamEnhanced = () => {
         <div className="max-w-4xl mx-auto bg-bronx-dark rounded-xl overflow-hidden shadow-xl">
           <div className="md:flex">
             {/* Левая часть - изображение и основные данные */}
-            <div className="md:w-2/5 bg-bronx-gray p-8 flex flex-col items-center justify-center">
+            <div className="md:w-2/5 bg-bronx-dark p-8 flex flex-col items-center justify-center">
               <div className="relative mb-6">
                 {/* Изображение с рамкой */}
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-bronx-orange">

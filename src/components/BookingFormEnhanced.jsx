@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
 
 const BookingFormEnhanced = () => {
   const [formData, setFormData] = useState({

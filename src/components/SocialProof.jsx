@@ -80,7 +80,7 @@ const SocialProof = () => {
           {stats.map((stat, index) => (
             <div 
               key={index}
-              className="bg-bronx-gray rounded-xl p-8 text-center transform transition duration-300 hover:scale-105 hover:shadow-lg"
+              className="bg-bronx-dark rounded-xl p-8 text-center transform transition duration-300 hover:scale-105 hover:shadow-lg"
             >
               <div className="text-5xl font-bold text-bronx-orange mb-4">
                 {isVisible && (
@@ -141,7 +141,7 @@ const SocialProof = () => {
             <div>
               <h4 className="text-xl font-bold text-bronx-orange mb-4">Что говорят клиенты:</h4>
               <div className="space-y-4">
-                <div className="bg-bronx-gray bg-opacity-50 p-4 rounded-lg">
+                <div className="bg-bronx-dark bg-opacity-70 p-4 rounded-lg">
                   <div className="flex items-center mb-2">
                     <div className="flex text-yellow-400">
                       {[...Array(5)].map((_, i) => (
@@ -155,7 +155,7 @@ const SocialProof = () => {
                   </div>
                 </div>
                 
-                <div className="bg-bronx-gray bg-opacity-50 p-4 rounded-lg">
+                <div className="bg-bronx-dark bg-opacity-70 p-4 rounded-lg">
                   <div className="flex items-center mb-2">
                     <div className="flex text-yellow-400">
                       {[...Array(5)].map((_, i) => (

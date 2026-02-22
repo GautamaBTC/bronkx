@@ -86,8 +86,8 @@ const Header = () => {
           
           {/* Контакты и кнопка записи */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+79001234567" className="text-bronx-light hover:text-bronx-orange transition duration-300">
-              +7 (900) 123-45-67
+            <a href="tel:+79188557799" className="text-bronx-light hover:text-bronx-orange transition duration-300">
+              +7 (918) 855-77-99
             </a>
             <Link 
               to="booking" 
@@ -166,8 +166,8 @@ const Header = () => {
               >
                 Запись
               </Link>
-              <a href="tel:+79001234567" className="text-bronx-light hover:text-bronx-orange transition duration-300">
-                +7 (900) 123-45-67
+              <a href="tel:+79188557799" className="text-bronx-light hover:text-bronx-orange transition duration-300">
+                +7 (918) 855-77-99
               </a>
               <Link 
                 to="booking" 

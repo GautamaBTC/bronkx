@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         'bronx-gray': '#1e293b', // Сине-черный графит
         'bronx-dark': '#0f172a', // Темно-синий
-        'bronx-orange': '#ff6b35', // Ярко-оранжевый
+        'bronx-orange': '#ff4500', // Супер-яркий оранжевый
         'bronx-light': '#e2e8f0', // Светло-серый
       },
       fontFamily: {

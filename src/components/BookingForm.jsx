@@ -166,7 +166,7 @@ const BookingForm = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+7 (900) 123-45-67" 
+                    placeholder="+7 (918) 855-77-99" 
                     className="w-full bg-bronx-dark border border-bronx-gray rounded-lg px-4 py-3 text-white focus:outline-none focus:border-bronx-orange"
                     required
                   />
@@ -225,7 +225,7 @@ const BookingForm = () => {
                 <ul className="space-y-2 text-bronx-light">
                   <li className="flex items-center">
                     <span className="mr-2">📱</span>
-                    <a href="tel:+79001234567" className="hover:text-bronx-orange">+7 (900) 123-45-67</a>
+                    <a href="tel:+79188557799" className="hover:text-bronx-orange">+7 (918) 855-77-99</a>
                   </li>
                   <li className="flex items-center">
                     <span className="mr-2">📍</span>
