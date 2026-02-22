@@ -14,7 +14,7 @@ const HeroEnhanced = () => {
   return (
     <section className="relative bg-bronx-gray text-white overflow-hidden pt-24">
       {/* Фоновое изображение с оверлеем */}
-      <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
+      <div className="absolute inset-0 bg-black opacity-80 z-0"></div>
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503951914875-452162b0f3f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center z-0"></div>
       
       {/* Декоративные элементы */}
@@ -24,12 +24,12 @@ const HeroEnhanced = () => {
       <div className="relative z-10 container-custom py-24 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
           {/* Основной заголовок с анимацией печати */}
-          <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-white text-shadow">
             BRONX — <span className="text-bronx-orange">барбершоп в Шахтах</span>
           </h1>
           
           {/* Анимированная подстрока */}
-          <div className="text-xl md:text-2xl text-bronx-light mb-10 h-12">
+          <div className="text-xl md:text-2xl text-bronx-light mb-10 h-12 text-shadow">
             <Typewriter
               options={{
                 strings: [
@@ -86,44 +86,44 @@ const HeroEnhanced = () => {
           
           {/* Блок с ключевыми преимуществами, работающими на страхи */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <div className="bg-bronx-dark bg-opacity-80 p-6 rounded-lg transform transition duration-300 hover:scale-105">
+            <div className="bg-bronx-dark bg-opacity-90 p-6 rounded-lg transform transition duration-300 hover:scale-105">
               <div className="text-bronx-orange text-2xl mb-3">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl mb-2">Выберите мастера по портфолио</h3>
-              <p className="text-bronx-light">Не попадёте к новичку без опыта</p>
+              <h3 className="font-serif text-xl mb-2 text-white text-shadow">Выберите мастера по портфолио</h3>
+              <p className="text-bronx-light text-shadow">Не попадёте к новичку без опыта</p>
             </div>
             
-            <div className="bg-bronx-dark bg-opacity-80 p-6 rounded-lg transform transition duration-300 hover:scale-105">
+            <div className="bg-bronx-dark bg-opacity-90 p-6 rounded-lg transform transition duration-300 hover:scale-105">
               <div className="text-bronx-orange text-2xl mb-3">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl mb-2">Запись в тот же день</h3>
-              <p className="text-bronx-light">Не ждите неделю свободного слота</p>
+              <h3 className="font-serif text-xl mb-2 text-white text-shadow">Запись в тот же день</h3>
+              <p className="text-bronx-light text-shadow">Не ждите неделю свободного слота</p>
             </div>
             
-            <div className="bg-bronx-dark bg-opacity-80 p-6 rounded-lg transform transition duration-300 hover:scale-105">
+            <div className="bg-bronx-dark bg-opacity-90 p-6 rounded-lg transform transition duration-300 hover:scale-105">
               <div className="text-bronx-orange text-2xl mb-3">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl mb-2">Стерильный инструмент при вас</h3>
-              <p className="text-bronx-light">Полная дезинфекция на ваших глазах</p>
+              <h3 className="font-serif text-xl mb-2 text-white text-shadow">Стерильный инструмент при вас</h3>
+              <p className="text-bronx-light text-shadow">Полная дезинфекция на ваших глазах</p>
             </div>
             
-            <div className="bg-bronx-dark bg-opacity-80 p-6 rounded-lg transform transition duration-300 hover:scale-105">
+            <div className="bg-bronx-dark bg-opacity-90 p-6 rounded-lg transform transition duration-300 hover:scale-105">
               <div className="text-bronx-orange text-2xl mb-3">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl mb-2">Фиксированная цена без доплат</h3>
-              <p className="text-bronx-light">Никаких скрытых комиссий</p>
+              <h3 className="font-serif text-xl mb-2 text-white text-shadow">Фиксированная цена без доплат</h3>
+              <p className="text-bronx-light text-shadow">Никаких скрытых комиссий</p>
             </div>
           </div>
           

@@ -31,13 +31,10 @@ const Header = () => {
   return (
     <header className={`fixed w-full bg-bronx-gray bg-opacity-95 backdrop-blur-sm z-50 transition-all duration-300 ${isScrolled ? 'py-2 shadow-lg' : 'py-4'}`}>
       <div className="container-custom">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center md:justify-start">
           {/* Логотип */}
-          <div className="flex items-center">
-            <div className="w-12 h-12 bg-bronx-orange rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">
-              B
-            </div>
-            <span className="text-2xl font-serif font-bold">BRONX</span>
+          <div className="flex items-center md:mr-auto absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none md:relative md:left-0 md:transform-none">
+            <span className="text-2xl font-serif font-bold text-bronx-orange">BRONX</span>
           </div>
           
           {/* Навигация для десктопа */}

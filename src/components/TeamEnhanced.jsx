@@ -34,7 +34,7 @@ const TeamEnhanced = () => {
   ];
 
   return (
-    <section id="team" className="py-20 bg-bronx-gray">
+    <section id="team" className="py-20 bg-bronx-dark">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
