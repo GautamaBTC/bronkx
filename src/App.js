@@ -24,9 +24,9 @@ function App() {
   }, []);
 
   return (
-    <div className="font-sans text-bronx-light relative">
-      <DiagonalBackground className="fixed inset-0 z-0" />
-      <div className="relative z-10">
+    <div className="font-sans text-bronx-light relative min-h-screen">
+      <DiagonalBackground className="fixed inset-0 -z-10" />
+      <div className="relative z-10 bg-transparent">
         <ScrollAnimation />
         <Header />
         <HeroEnhanced />

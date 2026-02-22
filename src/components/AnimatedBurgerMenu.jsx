@@ -41,8 +41,8 @@ const AnimatedBurgerMenu = () => {
   return (
     <>
       {/* Анимированное бургер-меню */}
-      <button 
-        className={`fixed top-6 right-6 z-50 w-12 h-12 rounded-full bg-bronx-orange flex flex-col justify-center items-center transition-all duration-300 ${isScrolled ? 'top-4' : ''}`}
+      <button
+        className={`md:hidden fixed top-6 right-6 z-50 w-12 h-12 rounded-full bg-bronx-orange flex flex-col justify-center items-center transition-all duration-300 ${isScrolled ? 'top-4' : ''}`}
         onClick={toggleMenu}
         aria-label="Меню"
       >
@@ -52,15 +52,15 @@ const AnimatedBurgerMenu = () => {
       </button>
 
       {/* Затемнение фона при открытом меню */}
-      <div 
-        className={`fixed inset-0 bg-black bg-opacity-70 z-40 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+      <div
+        className={`md:hidden fixed inset-0 bg-black bg-opacity-70 z-40 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
         onClick={closeMenu}
       ></div>
 
       {/* Выпадающее меню */}
-      <div 
+      <div
         ref={menuRef}
-        className={`fixed top-0 right-0 h-full w-80 bg-bronx-dark z-50 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`md:hidden fixed top-0 right-0 h-full w-80 bg-bronx-dark z-50 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         <div className="flex flex-col h-full p-8">
           {/* Логотип BRONX в меню */}
