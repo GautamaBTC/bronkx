@@ -80,17 +80,17 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <span className="mr-2">📍</span>
-                <span className="text-bronx-light">г. Шахты, ул. Ленина, 142А</span>
+                <span className="text-bronx-light">г. Шахты, ул. Ленина, 142 (или 142А)</span>
               </li>
               <li className="flex items-center">
                 <span className="mr-2">📱</span>
-                <a href="tel:+79001234567" className="text-bronx-light hover:text-bronx-orange transition duration-300">
-                  +7 (900) 123-45-67
+                <a href="tel:+79188557799" className="text-bronx-light hover:text-bronx-orange transition duration-300">
+                  +7 (918) 855-77-99
                 </a>
               </li>
               <li className="flex items-center">
                 <span className="mr-2">🕘</span>
-                <span className="text-bronx-light">Ежедневно с 10:00 до 20:00</span>
+                <span className="text-bronx-light">Ежедневно с 09:00 до 21:00</span>
               </li>
             </ul>
           </div>

@@ -100,7 +100,7 @@ const MapSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   <div>
-                    <p className="text-white">г. Шахты, ул. Ленина, 142А</p>
+                    <p className="text-white">г. Шахты, ул. Ленина, 142 (или 142А)</p>
                     <p className="text-gray-400 text-sm">1 этаж, вход со стороны улицы</p>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const MapSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div>
-                    <p className="text-white">Ежедневно с 10:00 до 20:00</p>
+                    <p className="text-white">Ежедневно с 09:00 до 21:00</p>
                     <p className="text-gray-400 text-sm">Без выходных</p>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ const MapSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   <div>
-                    <p className="text-white">+7 (999) 123-45-67</p>
+                    <p className="text-white">+7 (918) 855-77-99</p>
                     <p className="text-gray-400 text-sm">WhatsApp, Telegram</p>
                   </div>
                 </div>

@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         'bronx-gray': '#1a1a1a',
         'bronx-dark': '#0f0f0f',
-        'bronx-orange': '#ff6b35',
+        'bronx-orange': '#ff4500',
         'bronx-light': '#e0e0e0',
       },
       fontFamily: {
