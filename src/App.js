@@ -10,7 +10,6 @@ import BookingFormEnhanced from './components/BookingFormEnhanced';
 import SocialProof from './components/SocialProof';
 import MapSection from './components/MapSection';
 import Footer from './components/Footer';
-import AnimatedBackground from './components/AnimatedBackground';
 import AnimatedBurgerMenu from './components/AnimatedBurgerMenu';
 import ScrollAnimation from './components/ScrollAnimation';
 
@@ -24,9 +23,8 @@ function App() {
   }, []);
 
   return (
-    <div className="font-sans text-bronx-light relative min-h-screen">
-      <AnimatedBackground />
-      <div className="relative z-10 bg-transparent">
+    <div className="font-sans text-bronx-light relative min-h-screen bg-bronx-dark">
+      <div className="relative z-10">
         <ScrollAnimation />
         <Header />
         <HeroEnhanced />
