@@ -74,14 +74,14 @@ const ServicesEnhanced = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-bronx-dark">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-white">
             Наши <span className="text-bronx-orange">услуги</span>
           </h2>
           <div className="w-24 h-1 bg-bronx-orange mx-auto mb-6"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-bronx-light max-w-2xl mx-auto">
             Профессиональные услуги для мужчин и детей с гарантией качества
           </p>
         </div>
@@ -91,19 +91,19 @@ const ServicesEnhanced = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-bronx-gray rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl"
+              className="bg-white bg-opacity-90 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl"
             >
               {/* Верхняя часть карточки с иконкой и заголовком */}
-              <div className="bg-bronx-dark p-6 text-white">
+              <div className="bg-bronx-orange p-6 text-white">
                 <div className="flex justify-between items-start mb-4">
-                  <div className="text-bronx-orange">
+                  <div className="text-white">
                     {renderIcon(service.icon)}
                   </div>
-                  <div className="text-2xl font-bold text-bronx-orange">{service.price}</div>
+                  <div className="text-2xl font-bold text-white">{service.price}</div>
                 </div>
                 <h3 className="text-xl font-serif font-bold text-white">{service.title}</h3>
-                <p className="text-bronx-light text-sm mt-2">{service.description}</p>
-                <div className="mt-3 text-xs text-bronx-light flex items-center">
+                <p className="text-gray-800 text-sm mt-2">{service.description}</p>
+                <div className="mt-3 text-xs text-white flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -119,7 +119,7 @@ const ServicesEnhanced = () => {
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-bronx-orange mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
-                      <span className="text-gray-900 font-medium">{feature}</span>
+                      <span className="text-gray-800 font-medium">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -142,7 +142,7 @@ const ServicesEnhanced = () => {
         
         {/* Сравнение с обычной парикмахерской */}
         <div className="bg-bronx-gray bg-opacity-50 rounded-xl p-8">
-          <h3 className="text-2xl font-serif font-bold text-center mb-8">
+          <h3 className="text-2xl font-serif font-bold text-center mb-8 text-white">
             Почему <span className="text-bronx-orange">BRONX</span>, а не обычная парикмахерская?
           </h3>
           
