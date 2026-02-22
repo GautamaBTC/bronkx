@@ -10,6 +10,8 @@ import BookingFormEnhanced from './components/BookingFormEnhanced';
 import SocialProof from './components/SocialProof';
 import MapSection from './components/MapSection';
 import Footer from './components/Footer';
+import DiagonalBackground from './components/DiagonalBackground';
+import AnimatedBurgerMenu from './components/AnimatedBurgerMenu';
 
 function App() {
   useEffect(() => {
@@ -22,6 +24,7 @@ function App() {
 
   return (
     <div className="font-sans text-bronx-light">
+      <DiagonalBackground />
       <Header />
       <HeroEnhanced />
       <ServicesEnhanced />
@@ -31,6 +34,7 @@ function App() {
       <BookingFormEnhanced />
       <MapSection />
       <Footer />
+      <AnimatedBurgerMenu />
     </div>
   );
 }
