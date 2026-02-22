@@ -20,13 +20,6 @@ const Header = () => {
     };
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
 
   return (
     <header className={`fixed w-full bg-bronx-gray bg-opacity-95 backdrop-blur-sm z-50 transition-all duration-300 ${isScrolled ? 'py-2 shadow-lg' : 'py-4'}`}>
