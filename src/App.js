@@ -2,11 +2,13 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Team from './components/Team';
-import Testimonials from './components/Testimonials';
-import BookingForm from './components/BookingForm';
+import HeroEnhanced from './components/HeroEnhanced';
+import ServicesEnhanced from './components/ServicesEnhanced';
+import TeamEnhanced from './components/TeamEnhanced';
+import TestimonialsEnhanced from './components/TestimonialsEnhanced';
+import BookingFormEnhanced from './components/BookingFormEnhanced';
+import SocialProof from './components/SocialProof';
+import MapSection from './components/MapSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -21,11 +23,13 @@ function App() {
   return (
     <div className="font-sans text-bronx-light">
       <Header />
-      <Hero />
-      <Services />
-      <Team />
-      <Testimonials />
-      <BookingForm />
+      <HeroEnhanced />
+      <ServicesEnhanced />
+      <TeamEnhanced />
+      <TestimonialsEnhanced />
+      <SocialProof />
+      <BookingFormEnhanced />
+      <MapSection />
       <Footer />
     </div>
   );
