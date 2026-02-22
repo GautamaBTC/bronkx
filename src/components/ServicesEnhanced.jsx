@@ -141,7 +141,7 @@ const ServicesEnhanced = () => {
         </div>
         
         {/* Сравнение с обычной парикмахерской */}
-        <div className="bg-bronx-gray bg-opacity-70 rounded-xl p-8">
+        <div className="bg-bronx-gray bg-opacity-50 rounded-xl p-8">
           <h3 className="text-2xl font-serif font-bold text-center mb-8">
             Почему <span className="text-bronx-orange">BRONX</span>, а не обычная парикмахерская?
           </h3>

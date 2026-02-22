@@ -88,7 +88,7 @@ const TestimonialsEnhanced = () => {
         
         {/* Активный отзыв */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-bronx-dark bg-opacity-95 rounded-xl p-8 shadow-lg">
+          <div className="bg-bronx-dark bg-opacity-85 rounded-xl p-8 shadow-lg">
             <div className="flex flex-col md:flex-row items-center md:items-start">
               {/* Аватар и информация о клиенте */}
               <div className="md:w-1/3 flex flex-col items-center md:items-start mb-6 md:mb-0">
@@ -153,7 +153,7 @@ const TestimonialsEnhanced = () => {
             <div 
               key={index}
               onClick={() => setActiveTestimonial(index)}
-              className={`bg-bronx-dark bg-opacity-95 rounded-lg overflow-hidden shadow-lg cursor-pointer transform transition duration-300 hover:scale-105 ${
+              className={`bg-bronx-dark bg-opacity-85 rounded-lg overflow-hidden shadow-lg cursor-pointer transform transition duration-300 hover:scale-105 ${
                 activeTestimonial === index ? 'ring-2 ring-bronx-orange' : ''
               }`}
             >
